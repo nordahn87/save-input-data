@@ -1,11 +1,5 @@
 export const Dialog = () => {
-  return (
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mattis
-      tincidunt dolor. Quisque ut est nisl. Cras vitae condimentum est. Proin
-      ullamcorper at sem non rhoncus.
-    </p>
-  );
+  return <p>Changes have been made. Do you want to save?</p>;
 };
 
 export default Dialog;

@@ -1,0 +1,57 @@
+@import url("./font.css");
+
+:root {
+  --primary: #3398db;
+  --success: #12c75d;
+  --danger: #da402f;
+  --warning: #ff9900;
+  --solid: #707070;
+  --white: #ffffff;
+  --black: #000000;
+  --deep-blue: #0d095b;
+  --primary-hover: #2274aa;
+  --success-hover: #0b9143;
+  --warning-hover: #b66100;
+  --danger-hover: #b82c1d;
+  --solid-hover: #5e5e5e;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.wrapper-popup {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: fixed;
+  bottom: -100%;
+  left: 0;
+  background-color: var(--deep-blue);
+  color: var(--white);
+}
+
+.show {
+  bottom: 0;
+}
+
+.container-popup {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 0 16px;
+}
+
+.submit-button {
+  flex: 0 0 auto;
+  background-color: var(--success);
+  color: var(--black);
+  padding: 8px 12px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+  font-weight: 500;
+}
+
+.submit-button:hover {
+  background-color: var(--success-hover);
+}
