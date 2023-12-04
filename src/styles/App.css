@@ -1,0 +1,106 @@
+@import url("./font.css");
+
+:root {
+  --primary: #3398db;
+  --success: #12c75d;
+  --danger: #da402f;
+  --warning: #ff9900;
+  --solid: #b3b3b3;
+  --white: #ffffff;
+  --black: #000000;
+  --deep-blue: #0d095b;
+  --primary-hover: #2274aa;
+  --success-hover: #0b9143;
+  --warning-hover: #b66100;
+  --danger-hover: #b82c1d;
+  --solid-hover: #5e5e5e;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0 auto;
+  max-width: 1366px;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  place-items: center;
+  gap: 20px; 
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  max-width: 500px;
+}
+
+input,
+select,
+textarea {
+  padding: 8px;
+  border: 1px solid var(--solid);
+  border-radius: 5px;
+}
+
+input:focus,
+input:active,
+select:focus,
+select:active,
+textarea:focus,
+textarea:active {
+  outline: 1px solid var(--primary);
+  box-shadow: none;
+  border-color: var(--primary);
+}
+
+textarea {
+  resize: none;
+  height: 100px;
+}
+
+.wrapper-popup {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: fixed;
+  bottom: -100%;
+  left: 0;
+  background-color: var(--deep-blue);
+  color: var(--white);
+}
+
+.show {
+  bottom: 0;
+}
+
+.container-popup {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 0 16px;
+}
+
+.submit-button {
+  flex: 0 0 auto;
+  background-color: var(--success);
+  color: var(--black);
+  padding: 8px 12px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+  font-weight: 500;
+}
+
+.submit-button:hover {
+  background-color: var(--success-hover);
+}
+
+@media (max-width: 991px) {
+  .main {
+    grid-template-columns: 1fr;
+  }
+}

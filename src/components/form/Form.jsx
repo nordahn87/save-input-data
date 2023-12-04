@@ -1,17 +1,17 @@
 export const Form = () => {
   return (
-    <form>
+    <form id="form" className="wrapper">
       <label htmlFor="firstname">First name</label>
-      <input type="text" id="firstname" name="firstname" value="" />
+      <input type="text" id="firstname" name="firstname" />
 
       <label htmlFor="lastname">Last name</label>
-      <input type="text" id="lastname" name="lastname" value="" />
+      <input type="text" id="lastname" name="lastname" />
 
       <label htmlFor="birthdate">Birth Date</label>
-      <input type="date" id="birthdate" name="birthdate" value="" />
+      <input type="date" id="birthdate" name="birthdate" />
 
       <label htmlFor="email">Email:</label>
-      <input type="email" id="email" name="email" value="" />
+      <input type="email" id="email" name="email" />
 
       <label htmlFor="phoneNumber">Phone Number</label>
       <input
@@ -19,7 +19,6 @@ export const Form = () => {
         id="phoneNumber"
         name="phoneNumber"
         pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-        value=""
       />
 
       <label htmlFor="gender">Gender</label>
@@ -33,7 +32,7 @@ export const Form = () => {
       </select>
 
       <label htmlFor="additionalinfo">Additional Info:</label>
-      <textarea id="additionalinfo" name="additionalinfo" value=""></textarea>
+      <textarea id="additionalinfo" name="additionalinfo" ondrop="return false"></textarea>
     </form>
   );
 };

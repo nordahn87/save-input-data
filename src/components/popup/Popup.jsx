@@ -3,9 +3,11 @@ import Dialog from "./dialog/Dialog";
 
 export const Popup = () => {
   return (
-    <div>
-      <Dialog />
-      <SaveButton />
+    <div className="wrapper-popup show">
+      <div className="container-popup">
+        <Dialog />
+        <SaveButton />
+      </div>
     </div>
   );
 };

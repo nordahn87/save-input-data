@@ -1,26 +1,26 @@
 export const Result = () => {
   return (
-    <div>
+    <div class="wrapper">
       <label>First name</label>
       <p>-</p>
 
       <label>Last name</label>
-      <p>-</p>
+      <div>-</div>
 
       <label>Birth Date</label>
-      <p>-</p>
+      <div>-</div>
 
       <label>Email:</label>
-      <p>-</p>
+      <div>-</div>
 
       <label>Phone Number</label>
-      <p>-</p>
+      <div>-</div>
 
       <label>Gender</label>
-      <p>-</p>
+      <div>-</div>
 
-      <label>Gender</label>
-      <p>No additional information.</p>
+      <label>Additional information.</label>
+      <div>No additional information.</div>
     </div>
   );
 };
