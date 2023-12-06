@@ -3,8 +3,8 @@ import Dialog from "./dialog/Dialog";
 
 export const Popup = () => {
   return (
-    <div className="wrapper-popup show">
-      <div className="container-popup">
+    <div className="container-popup show">
+      <div className="wrapper-popup">
         <Dialog />
         <SaveButton />
       </div>

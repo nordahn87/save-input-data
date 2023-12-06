@@ -22,11 +22,11 @@ body {
   max-width: 1366px;
 }
 
-.main {
+.container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   place-items: center;
-  gap: 20px; 
+  gap: 20px;
   min-height: 100vh;
   padding: 20px;
 }
@@ -39,20 +39,14 @@ body {
   max-width: 500px;
 }
 
-input,
-select,
-textarea {
+.form-input {
   padding: 8px;
   border: 1px solid var(--solid);
   border-radius: 5px;
 }
 
-input:focus,
-input:active,
-select:focus,
-select:active,
-textarea:focus,
-textarea:active {
+.form-input:focus,
+.form-input:active {
   outline: 1px solid var(--primary);
   box-shadow: none;
   border-color: var(--primary);
@@ -63,7 +57,7 @@ textarea {
   height: 100px;
 }
 
-.wrapper-popup {
+.container-popup {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -78,7 +72,7 @@ textarea {
   bottom: 0;
 }
 
-.container-popup {
+.wrapper-popup {
   display: flex;
   align-items: center;
   gap: 16px;
