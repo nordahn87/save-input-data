@@ -1,8 +1,12 @@
+import { useInputValue } from "../../providers/input.provider";
+
 export const Result = () => {
+  const { inputValues, setInputValues, handleSubmit } = useInputValue();
+
   return (
-    <div class="wrapper">
+    <div className="wrapper">
       <label>First name</label>
-      <p>-</p>
+      <p>{inputValues.firstName}</p>
 
       <label>Last name</label>
       <div>-</div>
